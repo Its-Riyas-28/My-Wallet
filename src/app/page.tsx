@@ -1,13 +1,14 @@
 import React from 'react'
-import mo from "../../public/image/mo.jpg"
-import wallet from "./../assets/wallet.jpg"
+import Image from 'next/image';
+import mo from "../../image/mo.jpg"
+import walletImage from "../../image/wallet.jpg"
 
 import { IoFastFood } from "react-icons/io5";
 import { GiTakeMyMoney } from "react-icons/gi";
 import { BsHouseFill } from "react-icons/bs";
 import { BiCameraMovie } from "react-icons/bi";
 import { GiReceiveMoney } from "react-icons/gi";
-import { url } from 'inspector';
+
 
 
 
@@ -17,16 +18,16 @@ function page() {
     <div> 
         
                             {/* Background*/}
-        <div className='flex bg-teal-300 w-[1488px] h-[708px]'>
+        <div className='flex bg-zinc-900 w-[1488px] h-[708px]'>
         <div>
-        {/*<img src={mo} alt="" style={{height: "200px", width: "500px"}} />*/}
+                <Image src={walletImage} alt="Picture of a wallet" className=' w-[490px] mt-[90px] ml-[239px] shadow-black shadow-2xl rounded'/>
         </div>
 
         
                             {/* Title*/}
                   <div className='flex 
                                   font-bold font-sans text-2xl  text-orange-500 text-shadow
-                                  pt-[40px] pl-[740px]'>My
+                                  pt-[40px]'>My
                   </div>
 
                   <div className='flex 
